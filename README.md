@@ -14,9 +14,8 @@ Summary: Original idea was presented in the thesis "A statistical analysis tool 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-agricolae-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-agricolae-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-agricolae-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-agricolae-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-agricolae-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-agricolae-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-agricolae-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-agricolae-feedstock)
 
 Current release info
 ====================
