@@ -1,4 +1,4 @@
-{% set version = '1.3-0' %}
+{% set version = '1.3-1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/agricolae_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/agricolae/agricolae_{{ version }}.tar.gz
-  sha256: bcad30333ccfb3a0494229b534101b0757b2f2de6455f35dc92df663dd552919
+  sha256: ee883fd350f74d2662b5d5a65c12eb73473b8589f3e57cf1cd005b32d667f3a3
 
 build:
   merge_build_host: True  # [win]
@@ -68,8 +68,8 @@ extra:
 # Package: agricolae
 # Type: Package
 # Title: Statistical Procedures for Agricultural Research
-# Version: 1.3-0
-# Date: 2019-01-04
+# Version: 1.3-1
+# Date: 2019-04-04
 # Author: Felipe de Mendiburu
 # Maintainer: Felipe de Mendiburu <fmendiburu@lamolina.edu.pe>
 # Imports: klaR, MASS, nlme, cluster, spdep, AlgDesign, graphics
@@ -77,7 +77,7 @@ extra:
 # License: GPL
 # URL: http://tarwi.lamolina.edu.pe/~fmendiburu
 # NeedsCompilation: no
-# Packaged: 2019-01-04 22:28:17 UTC; DELL
+# Packaged: 2019-04-04 20:47:55 UTC; DELL
 # Depends: R (>= 2.10)
 # Repository: CRAN
-# Date/Publication: 2019-01-07 21:00:11 UTC
+# Date/Publication: 2019-04-04 21:20:03 UTC
