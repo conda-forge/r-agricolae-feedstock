@@ -1,4 +1,4 @@
-{% set version = "1.3-2" %}
+{% set version = "1.3-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/agricolae_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/agricolae/agricolae_{{ version }}.tar.gz
-  sha256: ae2205342403ef70fdbc25e78670328eb391a9228c99b097e86c1a4675ad17bd
+  sha256: e9b16317f7f97c8af5d5edcf414ff209114bfc76329e06701fffc279eaa21f8e
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,18 +48,11 @@ test:
 about:
   home: http://tarwi.lamolina.edu.pe/~fmendiburu
   license: GPL
-  summary: Original idea was presented in the thesis "A statistical analysis tool for agricultural
-    research" to obtain the degree of Master on science, National Engineering University
-    (UNI), Lima-Peru. Some experimental data for the examples come from the CIP and
-    others research. Agricolae offers extensive functionality on experimental design
-    especially for agricultural and plant breeding experiments, which can also be useful
-    for other purposes. It supports planning of lattice, Alpha, Cyclic, Complete Block,
-    Latin Square, Graeco-Latin Squares, augmented block, factorial, split and strip
-    plot designs. There are also various analysis facilities for experimental data,
-    e.g. treatment comparison procedures and several non-parametric tests comparison,
-    biodiversity indexes and consensus cluster.
+  summary: Original idea was presented in the thesis "A statistical analysis tool for agricultural research" to obtain the degree of Master on science, National Engineering University (UNI), Lima-Peru. Some experimental data for the examples come from the CIP and others research. Agricolae offers extensive functionality
+    on experimental design especially for agricultural and plant breeding experiments, which can also be useful for other purposes. It supports planning of lattice, Alpha, Cyclic, Complete Block, Latin Square, Graeco-Latin Squares, augmented block, factorial, split and strip plot designs. There are also various analysis
+    facilities for experimental data, e.g. treatment comparison procedures and several non-parametric tests comparison, biodiversity indexes and consensus cluster.
   license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
