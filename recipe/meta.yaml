@@ -1,4 +1,4 @@
-{% set version = "1.3-3" %}
+{% set version = "1.3-5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/agricolae_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/agricolae/agricolae_{{ version }}.tar.gz
-  sha256: e9b16317f7f97c8af5d5edcf414ff209114bfc76329e06701fffc279eaa21f8e
+  sha256: 83822535608b5307ca7d0067dbcf1ea3b7f2b1be17a52a55b72cc9f3c6bdec5d
 
 build:
   merge_build_host: true  # [win]
